@@ -1,0 +1,254 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login & Registration</title>
+    <link rel="icon" type="images/png" href="images/logo1.png"></link>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url(images/bckimg2.avif) no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      
+    .wrapper{
+        position: relative;
+        width: 400px;
+        height: 440px;
+        background: transparent;
+        border: 2px solid rgba(255, 25, 255, .5);
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0,0,0,.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      /* overflow: hidden;*/
+        transition: height .2s ease;
+    }
+    
+    .wrapper.active{
+        height: 520px;
+    }
+    
+    .wrapper .form-box{
+        width: 100%;
+        padding: 40px;
+    }
+    .wrapper .form-box.login {
+       transition: transform .18s ease;
+       transform: translateX(0);
+    }
+    .wrapper.active .form-box.login{
+        transition: none;
+        transform: translateX(-400px);
+        
+    }
+    .wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+    }
+    .wrapper.active .form-box.register {
+        transition: transform .18s ease;
+        transform: translateX(0);
+    }
+    .wrapper .icon-close {
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 45px;
+        height: 45px;
+        background: #844cce;
+       font-size: 4em;
+       color: #f3f3f4;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-bottom-left-radius: 20px;
+       cursor: pointer;
+       z-index: 1;
+    }
+    
+    .form-box h2{
+        font-size: 3em;
+        color: #162938;
+        text-align: center;
+    
+    }
+    
+    .input-box{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid#162938;
+        margin:20px 0;
+    }
+    
+    .input-box label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+        color: #000643;
+        font-weight: 500;
+        pointer-events: none;
+        transition: .1s;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:valid~label{
+        top: -5px;
+    }
+    
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color:  #162938;
+        font-weight: 600;
+        padding: 0 35px 0 5px;
+    }
+    
+    .input-box .icon{
+        position: absolute;
+        right: 8px;
+        font-size: 2em;
+        color:  #162938;
+        line-height: 57px;
+    }
+    
+    .remember-forgot{
+        font-size: 1.3em;
+        color: #162938;
+        font-weight: 500;
+        margin: -15px 0 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .remember-forgot label input{
+        accent-color: #000509;
+        margin-right: 5px;
+        font-weight: 700;
+    }
+    
+    .remember-forgot a{
+        color: #162938;
+        text-decoration: none;
+    }
+    
+    .remember-forgot a:hover{
+        text-decoration: underline;
+    }
+    
+    .btn{
+        width: 100%;
+        height: 45px;
+        background-color: #844cce;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 2em;
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    .login-register{
+        font-size: .9em;
+        color: #162938;
+        text-align: center;
+        font-weight: 500;
+        margin: 25px 0 10px;
+    }
+    
+    .login-registe p a{
+        color: #162938;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+</style>
+<body>
+   <div class="wrapper" >
+<span class="icon-close"><i class='bx bx-window-close'></i></span>
+
+       <div class="form-box login">
+           <h2>Login</h2>
+           <form action="#">
+
+                <div class="input-box">
+                    <span class="icon"> <i class='bx bx-envelope' ></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                
+                <div class="input-box">
+                    <span class="icon"> <i class='bx bx-lock-alt' ></i></span>
+                    <input type="password" required>
+                    <label>password</label>
+                </div>
+                
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password ?</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+
+                <div class="login-register">
+                    <p>Don't have an account? 
+                        <a href="#" class="register-link">Register </a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"> <i class='bx bx-user' ></i> </span>
+                        <input type="text" required>
+                        <label>User name</label>
+                     </div>
+                     
+                     <div class="input-box">
+                         <span class="icon"> <i class='bx bx-envelope' ></i></span>
+                         <input type="email" required>
+                         <label>Email</label>
+                     </div>
+                     
+                     <div class="input-box">
+                         <span class="icon"> <i class='bx bx-lock-alt' ></i></span>
+                         <input type="password" required>
+                         <label>password</label>
+                     </div>
+                     
+                     <div class="remember-forgot">
+                         <label><input type="checkbox">I agree to the terms & conditions</label>
+                         
+                     </div>
+                     <button type="submit" class="btn">Register</button>
+                     <div class="login-register">
+                         <p>Already have an account? 
+                             <a href="#" class="login-link">Login</a></p>
+                         </div>
+                     </form>
+                 </div>
+ </div> 
+ <script src="script.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

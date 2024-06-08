@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!--Font awesome cdn link-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <!--custom css file link-->
+      <link rel="stylesheet" href="style.css"> 
+</head>
+<style>
+    .navbar {
+      overflow: hidden;
+      background-color:paleturquoise;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+.dropdown {
+ text-align: center;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: azure;
+    color:  rgb(79, 10, 108);
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+    
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: rgb(234, 230, 230);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      width: 100%;
+      left: 0;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content .header {
+
+      background-color: aqua;
+      padding: 16px;
+      color: white;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      background:url(bck2.jpg);
+      height: 280px;
+     background-clip: content-box;
+    }
+    .column h3{
+        font-size: 15px;
+    }
+    .column a {
+      float: none;
+      color:purple;
+      padding: 16px;
+      text-decoration: none;
+      display: block;
+      text-align:center;
+    }
+     
+    .column a:hover {
+      background-color: #ddd;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .footer{
+    background: #ffcad4;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color: #370067;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: #040134;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .box  a:hover{
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+
+
+
+    </style>
+<body>
+    <body style="background-color:white;">
+
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">Flowers 
+            </button>
+            <div class="dropdown-content">   
+              <div class="row">
+                <div class="column">
+                  <h3>CATEGORY </h3>
+                  <a href="birthday.html">Birthday </a>
+                  <a href="anniversary.html">Anniversary </a>
+                  <a href="love.html">Love & Affection </a>
+                  <a href="hampers.html">Flower Hampers</a>
+                  <a href="flowerinvase.html">Flowers In Vase</a>
+        
+                </div>
+                <div class="column">
+                  <h3>FLOWERS</h3>
+                  <a href="Roses.html">Roses</a>
+                  <a href="lilies.html">Lilies</a>
+                  <a href="orchid.html">Orchids</a>
+                  <a href="mixed.html">Mixed Flowers</a>
+                  <a href="gerberas.html">Gerberas</a>
+        
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        
+
+    <section class="products" id="products">
+        <h1 class="heading">latest <span>products</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/img-1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$17.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <img src="images/img-2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$13.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/img-3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$14.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <img src="images/img-4.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$12.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-17%</span>
+                <div class="image">
+                    <img src="images/img-5.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$14.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-3%</span>
+                <div class="image">
+                    <img src="images/img-6.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$18.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-18%</span>
+                <div class="image">
+                    <img src="images/img-7.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$15.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/img-8.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$17.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/img-9.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$11.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-11%</span>
+                <div class="image">
+                    <img src="images/img-10.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$11.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-9%</span>
+                <div class="image">
+                    <img src="images/img-11.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$13.99 <span>$15.99</span></div>
+                </div>
+            </div>
+    
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/img-12.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="buynow.html" class="cart-btn">Buy Now</a>
+                        <a href="Popup shere/popindex.html" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Flower pot</h3>
+                    <div class="price">$18.99 <span>$15.99</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--footer section starts-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">products</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>Extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorites</a>
+        </div>
+        <div class="box">
+            <h3>Locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">France</a>
+            <a href="#">Japan</a>
+            <a href="#">Ukraine</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+917679777689</a>
+            <a href="#">Bloom05@gmail.com</a>
+            <a href="#">Barasat,700126</a>
+          <img src="/images/payment.png" alt="">
+       
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

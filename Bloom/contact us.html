@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="icon" type="images/png" href="images/logo1.png"></link>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+.contact .row{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap: 1.5rem;
+        width: 100%;
+        min-height: 100vh;
+        background: url(images/bckimg2.avif) no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+    }
+    
+    .contact .row form{
+        flex: 1 1 40rem;
+        padding: 2rem 2.5rem;
+        box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+        border: 1rem solid rgba(34, 8, 57, 0.1);
+        background: #fff;
+        border-radius: .5rem;
+    }
+    
+    .contact .row image{
+        flex: 1 1 40rem;
+    }
+    
+    contact .row image img{
+        width: 100%;
+        height: 150%;
+    }
+    
+    
+    .contact .row form .box{
+        padding: 1rem;
+        font-size: 2rem;
+        color: #b10fb1;
+        text-transform: none;
+        border: .1rem solid rgba(5, 238, 250, 0.939);
+        border-radius: .5rem;
+        margin: .7rem 0;
+        width: 100%;
+    }
+    
+    .contact .row form .box:focus{
+        border-color:rgb(245, 127, 218);
+    }
+    
+    .contact .row form textarea{
+        height: 15rem;
+        resize: none;
+    }
+
+</style>
+<body>
+    <section class="Contact" id="contact">
+
+        <h1 class="heading"> <span>Contact</span> Us</h1>
+        
+        <div class="row">
+        
+            <form action="">
+                <input type="text" placeholder="Name" class="box">
+                <input type="email" placeholder="Email" class="box">
+                <input type="number" placeholder="Number" class="box">
+                <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send message" class="btn">
+            </form>
+            <div class="image">
+                <img src="images/side.avif" alt="">
+            </div>
+        
+        </div>
+        </section>
+</body>
+</html>
